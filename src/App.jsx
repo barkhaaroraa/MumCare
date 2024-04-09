@@ -4,6 +4,8 @@ import RelaxationPage from "./pages/RelaxationPage"
 import PostpartumRecovery from "./pages/PostpartumRecovery";
 import CommunityPage from "./pages/Community";
 import DepressionPage from "./pages/Depression";
+import YogaNutritionPage from "./pages/YogaNutritionPage";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/postpartum-recovery" element={<PostpartumRecovery />} />
           <Route path="/community" element={<CommunityPage />} />
           <Route path="/depression" element={<DepressionPage/>} />
+          <Route path="/yoga" element={<YogaNutritionPage />} />
         </Routes>
       </Router>
     </>
