@@ -46,5 +46,12 @@ body,
 
 
 .slick-slide > div{
-  margin: 0px 10px;
+  margin: 0px 20px;
 }
+
+.active-link{
+  /* color: #4851f6; */
+  /* border-bottom: #f4ebed; */
+  font-weight: bold;
+}
+
