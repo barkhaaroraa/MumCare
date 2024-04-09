@@ -1,33 +1,40 @@
-import React from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import React from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDiscord, faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const CommunityPage = () => {
   return (
     <div>
-    <NavBar />
-    <div className="container mx-auto px-4 py-8">
-      <h1 className=" text-pink-800 text-3xl font-bold mb-4">Join our communities!</h1>
-      <div className="flex flex-col items-center space-y-4">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-md">
-          Join Discord
-        </button>
-        <div className="flex space-x-4">
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <img src="LINKEDIN_LOGO" alt="LinkedIn" className="w-8 h-8" />
+      <NavBar />
+      <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold text-pink-800 mb-8">Join Our Community for more help!</h1>
+        <p className="text-lg text-center text-gray-700 mb-8">
+          Connect with us on social media platforms and join our Discord community to engage with other members and stay updated with the latest news and events.
+        </p>
+        <div className="flex items-center justify-center space-x-6 mb-8">
+          <a href="#" className="hover:text-pink-600">
+            <FontAwesomeIcon icon={faDiscord} size="2x" />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <img src="GITHUB_LOGO" alt="GitHub" className="w-8 h-8" />
+          <a href="#" className="hover:text-pink-600">
+            <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <img src="FACEBOOK_LOGO" alt="Facebook" className="w-8 h-8" />
+          <a href="#" className="hover:text-pink-600">
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </a>
+          <a href="#" className="hover:text-pink-600">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
         </div>
+        <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full focus:outline-none">
+          Join Our Discord
+        </button>
       </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
   );
 };
 
 export default CommunityPage;
+
