@@ -32,7 +32,7 @@ const NavBar = () => {
         <NavLink to="/postpartum-recovery" className={`text-lg ${pathname === '/postpartum-recovery' ? 'active-link' : 'hover:border-b-2'}`} style={{ color: '#FFFFDE', fontSize: '22px' }}>Postpartum</NavLink> 
         </li>
         <li>
-        <NavLink to="/yoga" className={`text-lg ${pathname === '/yoga' ? 'active-link' : 'hover:border-b-2'}`} style={{ color: '#FFFFDE', fontSize: '22px' }}>Yoga.Nutrition</NavLink> 
+        <NavLink to="/yoga" className={`text-lg ${pathname === '/yoga' ? 'active-link' : 'hover:border-b-2'}`} style={{ color: '#FFFFDE', fontSize: '22px' }}>Yoga</NavLink> 
         </li>
         <li>
         <NavLink to="/community" className={`text-lg ${pathname === '/community' ? 'active-link' : 'hover:border-b-2'}`} style={{ color: '#FFFFDE', fontSize: '22px' }}>Community</NavLink> 
