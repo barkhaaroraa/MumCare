@@ -6,13 +6,13 @@ const NavBar = () => {
   return (
     <nav className="flex items-center justify-between bg-pink-800 py-3 px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <div className="flex items-center">
-        <img src={logo} alt="Logo" className="h-12 w-auto mr-4" />
+        <img src={logo} alt="Logo" className="h-12 w-auto mr-4 ml-2" />
         <span style={{
           fontWeight: 'bold',
-          fontSize: '32px', // Adjusted font size for MumCares text
+          fontSize: '32px', 
           color: 'rgb(211, 211, 185)',
           lineHeight: '50px',
-          paddingLeft: '40px'
+          paddingLeft: '30px'
         }}>
           MumCares
         </span>
@@ -22,10 +22,16 @@ const NavBar = () => {
           <Link to="/" className="text-lg italic" style={{ color: 'rgb(211, 211, 185)', fontSize: '22px' }}>Home</Link> {/* Adjusted font size */}
         </li>
         <li>
+          <Link to="/relax" className="text-lg italic" style={{ color: 'rgb(211, 211, 185)', fontSize: '22px' }}>Relaxation</Link> {/* Adjusted font size */}
+        </li>
+        <li>
           <Link to="/postpartum-recovery" className="text-lg italic" style={{ color: 'rgb(211, 211, 185)', fontSize: '22px' }}>Postpartum</Link> {/* Adjusted font size */}
         </li>
         <li>
-          <Link to="/relax" className="text-lg italic" style={{ color: 'rgb(211, 211, 185)', fontSize: '22px' }}>Relaxation</Link> {/* Adjusted font size */}
+          <Link to="/community" className="text-lg italic" style={{ color: 'rgb(211, 211, 185)', fontSize: '22px' }}>Community</Link> {/* Adjusted font size */}
+        </li>
+        <li>
+          <Link to="/depression" className="text-lg italic" style={{ color: 'rgb(211, 211, 185)', fontSize: '22px' }}>Depression</Link> {/* Adjusted font size */}
         </li>
       </ul>
       <button className="bg-pink-200 text-pink-500 px-4 py-2 rounded-md font-normal text-lg ml-2">
