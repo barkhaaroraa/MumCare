@@ -48,6 +48,9 @@ const PostpartumRecovery = () => {
           <img src="src\assets\images\pregg_home.png" alt="Image" className="max-w-full" />
         </div>
       </div>
+      <div className="w-full flex justify-center items-center">
+          <img src="src\assets\images\breast_feed_.svg" alt="Image" className="max-w-full w-7/12" />
+        </div>
       <Footer />
     </div>
   );
