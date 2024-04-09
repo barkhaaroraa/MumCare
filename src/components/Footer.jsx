@@ -1,10 +1,10 @@
-
-function Footer() {
+import React from "react";
+const Footer = () => {
   return (
-    <div>
-      Footer here
-    </div>
-  )
+    <footer>
+      <p>&copy; MumCares 2024</p>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
