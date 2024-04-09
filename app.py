@@ -12,7 +12,7 @@ GEMINI_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('chat.html')
 
 @app.route("/get_user_speech", methods=["POST"])
 def get_user_speech():
@@ -30,16 +30,17 @@ def get_user_speech():
         engine.runAndWait()
         try:
             text = recognizer.recognize_google(audio_text)
+            text1=text
             model = genai.GenerativeModel('gemini-1.0-pro-latest')
-            if text is None:
+            if text1 is None:
                 engine.say("Unable to recognize your speech.")
                 engine.runAndWait()
                 return jsonify({"message": "Unable to recognize your speech."})
-            response = model.generate_content("be polite and supportive and be like a friend and give not too long answers"+text)
+            response = model.generate_content("be polite and supportive and be like a friend and give not too long answers"+text1)
             
             engine.say(response.text)
             engine.runAndWait()
-            return jsonify({"message": response.text})
+            return jsonify({"user_input": text1, "message": response.text})
         
         except sr.UnknownValueError:
             engine.say("Sorry, I did not understand that.")

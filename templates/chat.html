@@ -9,8 +9,9 @@
 <body>
   <h1>Speech-to-Text Chatbot</h1>
   <button id="speak-btn">Speak Your Message</button>
+  <div id="user-container"></div>
   <div id="response-container"></div>
-
+  
   <script>
     $(document).ready(function() {
       $("#speak-btn").click(function() {
@@ -19,6 +20,7 @@
           url: '/get_user_speech',
           success: function(response) {
             $("#response-container").text(response.message);
+            $("#user-container").text(response.user_input);
           },
           error: function(xhr, status, error) {
             alert('Error processing speech');
