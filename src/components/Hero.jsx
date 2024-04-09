@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles.css';
 
 const Hero = () => {
   return (
     <div className='text-black'>
       <div className='max-w-[800px] mx-auto py-8'>
-        <h1 className='text-pink-800 md:text-6xl sm:text-4xl text-4xl font-bold md:py-8'>
+        <h1 className='text-pink-800 md:text-6xl sm:text-4xl text-4xl font-bold md:py-8 hover-animation'>
           Welcome to MumCares!
         </h1>
         <div className='flex justify-center items-center'>
@@ -15,12 +16,12 @@ const Hero = () => {
             <p className='md:text-2xl text-xl font-bold text-gray-700 mb-8'>
               Connect, Access Resources, and Promote Mental Well-being with MumCares.
             </p>
-            <button className='bg-[#FF69B4] hover:bg-[#F64885] w-[200px] rounded-md font-medium py-3 text-black'>
-              Get Started
+            <button className='bg-[#FF69B4] hover:bg-[#F64885] w-[250px] md:w-[300px] rounded-md font-medium py-4 text-pink-900 text-lg md:text-xl hover-animation' onClick={() => window.location.href = 'https://www.youtube.com/watch?v=ifwP1VVBQ7k'} >
+            Pregnancy Depression?
             </button>
           </div>
           <div className="md:w-1/2">
-            <img src="src\assets\images\6378447_adobe_express.png" alt="Pregnant Mother" className="w-full md:w-auto mb-8 md:ml-auto" />
+            <img src="src\assets\images\6378447_adobe_express.png" alt="Pregnant Mother" className="w-full md:w-auto mb-8 md:ml-auto hover-animation" />
           </div>
         </div>
       </div>
@@ -29,4 +30,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

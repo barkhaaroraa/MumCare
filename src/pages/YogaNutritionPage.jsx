@@ -1,4 +1,5 @@
 import YogaCarousel from "../components/YogaCarousel";
+<<<<<<< HEAD
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
@@ -8,6 +9,17 @@ function YogaNutritionPage() {
       <NavBar />
       <header className="py-8 text-center">
         {/* <h1 className="text-5xl font-semibold text-pink-700">Yoga and Nutrition Tips for Women</h1> */}
+=======
+import NavBar from "../components/NavBar"
+
+function YogaNutritionPage() {
+
+return (
+ <div>
+  <NavBar/>
+      <header className="py-4 text-center">
+      <h1 className="text-pink-800 md:text-6xl sm:text-4xl text-4xl font-bold md:py-8">Yoga and Nutrition After Pregnancy!</h1>
+>>>>>>> 6328b32ae4940fdb2a553afea1531f96fc31481f
       </header>
       <div className="max-w-6xl mx-auto px-6">
         <div className="bg-gradient-to-br from-pink-200 via-pink-300 to-pink-200 shadow-md rounded-lg p-6 mb-8">
