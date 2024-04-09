@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Speech-to-Text Chatbot</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Speech-to-Text Chatbot</h1>
-  <button id="speak-btn">Speak Your Message</button>
-  <div id="user-container"></div>
-  <div id="response-container"></div>
-  
+  <div id="chat-container">
+    <button id="speak-btn">Speak Your Message</button>
+    <div id="user-container"></div>
+    <div id="response-container"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
       $("#speak-btn").click(function() {
@@ -19,8 +22,8 @@
           type: 'POST',
           url: '/get_user_speech',
           success: function(response) {
-            $("#response-container").text(response.message);
-            $("#user-container").text(response.user_input);
+            $("#user-container").append("<div>User: " + response.user_input + "</div>");
+            $("#response-container").append("<div>AI: " + response.message + "</div>");
           },
           error: function(xhr, status, error) {
             alert('Error processing speech');
@@ -31,3 +34,4 @@
   </script>
 </body>
 </html>
+

@@ -8,7 +8,7 @@ const CommunityPage = () => {
   return (
     <div>
       <NavBar />
-      <div className="container mx-auto px-4 py-14 flex flex-col items-center justify-center">
+      <div className="container mx-auto px-4 py-14 flex flex-col items-center justify-center h-screen">
         <h1 className="text-4xl font-bold text-pink-800 mb-8">Join Our Community for more support!</h1>
         <p className="text-lg text-center text-gray-800 mb-8"style={{ maxWidth: '35rem'}}>
           Connect with us on social media platforms and join our Discord community to engage with other women and stay updated with the latest news and events.

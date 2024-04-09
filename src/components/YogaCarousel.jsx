@@ -78,7 +78,7 @@ function YogaCarousel() {
 
   return (
   <div className="w-3/4 m-auto">
-      <h2 className="text-4xl font-mono font-semibold text-rose-500 mt-20 text-center">Yoga Tips</h2>
+      <h2 className="text-4xl font-semibold text-pink-600 mt-20 text-center" style={{font: 'Poppins'}}>Yoga Tips</h2>
       <div className="mt-10">
         <Slider {...settings}>
         {data.map((d, index) => (

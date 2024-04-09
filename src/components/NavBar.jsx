@@ -37,11 +37,11 @@ const NavBar = () => {
         <li>
         <NavLink to="/community" className={`text-lg ${pathname === '/community' ? 'active-link' : 'hover:border-b-2'}`} style={{ color: '#FFFFDE', fontSize: '22px' }}>Community</NavLink> 
         </li>
-        <li>
+        {/* <li>
         <NavLink to="/depression" className={`text-lg ${pathname === '/depression' ? 'active-link' : 'hover:border-b-2'}`} style={{ color: '#FFFFDE', fontSize: '22px' }}>Depression</NavLink> 
-        </li>
+        </li> */}
       </ul>
-      <button className="bg-pink-200 text-pink-500 hover:text-pink-200 hover:bg-[#e45a88] px-4 py-3 rounded-md font-semibold text-xl ml-6">
+      <button className="bg-pink-200 text-pink-500 hover:text-pink-200 hover:bg-[#e45a88] px-4 py-3 rounded-md font-semibold text-xl ml-6" onClick={() => window.location.href = 'templates/chat.html'}>
         ANALYSE
       </button>
       </div>
