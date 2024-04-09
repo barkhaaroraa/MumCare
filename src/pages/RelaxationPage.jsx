@@ -95,8 +95,8 @@ function RelaxationPage() {
             </h2>
           </div>
         ) : (
-          <h2 className="text-5xl font-bold text-pink-300">
-            Put Stressful thought in Star
+           <h2 className="text-5xl font-semibold italic text-pink-300">
+            Put your Stressful thoughts in the circle...
           </h2>
         )}
         <div className={getCircleStyle}>{getSubmitText}</div>

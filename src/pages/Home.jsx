@@ -1,9 +1,17 @@
-function HomePage() {
+import React from 'react';
+import Hero from '../components/Hero'; 
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+
+const HomePage = () => {
   return (
     <div>
-      <h1>I'M Home PAGE..WELCOME</h1>
+      <NavBar />
+      <Hero />
+      <Footer />
     </div>
   );
-}
+};
 
 export default HomePage;
+
