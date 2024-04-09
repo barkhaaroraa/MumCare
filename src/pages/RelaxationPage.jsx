@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "../components/NavBar";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import bgAudio from "../assets/audio/stressRelief.mp3";
@@ -87,6 +88,7 @@ function RelaxationPage() {
 
   return (
     <div style={pageStyle}>
+      <NavBar/>
       <div className="flex flex-col items-center justify-center min-h-screen text-white gap-10 pt-8">
         {showQuotes ? (
           <div className="text-center">
