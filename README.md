@@ -61,6 +61,11 @@ This will start the Vite development server. You can view your project in the br
 ### Installing Required Packages
 Before running MUMCARES, ensure you have the necessary Python packages installed. You can do this by running the following command:<br>
 ```pip install Flask speechrecognition google google-cloud pyttsx3 playsound ```
+
+Also, set env variable ```API_KEY="your gemini api key"``` as the bot uses Gemini API to make the calls
+
+To run the bot type ```python app.py``` in the terminal inside MUMCARE folder.
+
 #### Installed Modules
 After installing the packages, you'll have access to the following Python modules:
 Flask
