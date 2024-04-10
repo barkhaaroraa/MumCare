@@ -1,7 +1,7 @@
 # MUMCARES: Your Safe Space for Postpartum Support 🌼
 
 ## Introduction
-MUMCARE is a website dedicated to supporting new moms through the challenging journey of postpartum depression. We understand that becoming a mother is a beautiful experience, but it can also be overwhelming and stressful, especially with the onset of postpartum depression. Our goal is to provide a safe and supportive space where new moms can find resources, connect with others, and access various tools to help them navigate this period with more ease and confidence. 🤱🌟
+MUMCARES is a website dedicated to supporting new moms through the challenging journey of postpartum depression. We understand that becoming a mother is a beautiful experience, but it can also be overwhelming and stressful, especially with the onset of postpartum depression. Our goal is to provide a safe and supportive space where new moms can find resources, connect with others, and access various tools to help them navigate this period with more ease and confidence. 🤱🌟
 
 ## Features
 
