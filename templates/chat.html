@@ -4,16 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Speech-to-Text Chatbot</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFD1DC;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+    #chat-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .user-response {
+      background-color: #e8f7ff; 
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .ai-response {
+      background-color: #E8FDFF;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    #speak-btn {
+      background-color: #F0237F;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #speak-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <h1>Speech-to-Text Chatbot</h1>
   <div id="chat-container">
     <button id="speak-btn">Speak Your Message</button>
-    <div id="user-container"></div>
-    <div id="response-container"></div>
+    <div class="user-response flex items-center">
+      <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-female-5-512.png" alt="User Avatar" class="h-8 w-8 rounded-full mr-2"> 
+      <div id="user-container"></div>
+    </div>
+    <div class="ai-response flex items-center">
+      <img src="" alt="AI Avatar" class="h-8 w-8 rounded-full mr-2">
+      <div id="response-container"></div>
+    </div>
   </div>
-
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
@@ -22,8 +70,8 @@
           type: 'POST',
           url: '/get_user_speech',
           success: function(response) {
-            $("#user-container").append("<div>User: " + response.user_input + "</div>");
-            $("#response-container").append("<div>AI: " + response.message + "</div>");
+            $("#user-container").html("<div>User: " + response.user_input + "</div>"); // Updated to html()
+            $("#response-container").html("<div>AI: " + response.message + "</div>"); // Updated to html()
           },
           error: function(xhr, status, error) {
             alert('Error processing speech');
@@ -34,4 +82,3 @@
   </script>
 </body>
 </html>
-
